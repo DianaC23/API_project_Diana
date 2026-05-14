@@ -27,7 +27,7 @@ app.post('/registro',(req, res)=>{
         });
     }
     //Verificar si el usuario exite
-    const usuarioExiste = usuario.find(
+    const usuarioExiste = usuarios.find(
         user=>user.usuario == usuario
     );
     
@@ -57,7 +57,7 @@ app.post('/login',(req, res)=>{
     const {usuario, password} = req.body;
     
     //Buscar usuario
-    const usuarioEncontrado = usuario.find(
+    const usuarioEncontrado = usuarios.find(
         user => 
             user.usuario == usuario &&
             user.password == password
@@ -74,8 +74,8 @@ app.post('/login',(req, res)=>{
         });
     }
 });
-
+//***Inicio de sesión de  usuarios final***
 //Inciar el servidor
 app.listen(PORT,()=> {
-    console.log(`Servidor ejecutandose en ${PORT}`)
-});//***Inicio de sesión de  usuarios final***
+    console.log(`Servidor activo en ${PORT}`)
+});
