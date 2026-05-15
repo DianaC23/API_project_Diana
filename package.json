@@ -2,10 +2,10 @@
   "name": "dianaccruzmarin_ga7-220501096-aa5-ev01",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "service.js",
   "scripts": {
-    "start": "node app.js",
-    "dev": "nodemon --exec node app.js"
+    "start": "node service.js",
+    "dev": "nodemon API/service.js"
   },
   "keywords": [],
   "author": "",
