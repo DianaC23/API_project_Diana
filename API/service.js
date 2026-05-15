@@ -71,7 +71,7 @@ app.post('/login',async(req, res)=>{
         //200= todo salio perfecto
         return res.status(200).json({mensaje:"Autenticación satisfactora"});
     }else{//401= no autorrizado
-        return res.status(401).json({mensaje: "Error de autenticacaión"});
+        return res.status(401).json({mensaje: "Error de autenticación"});
     }
 } catch(error){//obligatorio si la base de datos falla
     //500= Error ineterno
